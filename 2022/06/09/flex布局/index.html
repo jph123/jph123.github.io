@@ -15,19 +15,19 @@
 <meta property="og:site_name" content="MyBlog">
 <meta property="og:description" content="一、flex弹性的概念弹性盒子是一种用于按行或按列布局元素的一维布局方法，元素可以膨胀以填充额外的空间，收缩以适应更小的空间，适用于任何元素上，如果一个元素使用了flex弹性布局（以下都会简称为：flex布局），则会在内部形成BFC，flex布局已经得到了所有浏览器的支持，这意味着，现在就能放心，安全的使用这项技术。 二、flex:1 代表什么 flex：属性是 flex-grow, flex-s">
 <meta property="og:locale">
-<meta property="og:image" content="http://example.com/images/aohe9-sualy.jpg">
-<meta property="og:image" content="http://example.com/images/ar25j-cvr5d.jpg">
-<meta property="og:image" content="http://example.com/images/ajjiq-fzftz.jpg">
-<meta property="og:image" content="http://example.com/images/afbfo-nnoug.jpg">
-<meta property="og:image" content="http://example.com/images/a7gbb-tllei.jpg">
-<meta property="og:image" content="http://example.com/images/a57z4-ti2p2.jpg">
-<meta property="og:image" content="http://example.com/images/ayj0h-qq8ws.jpg">
+<meta property="og:image" content="http://example.com/images/flex/aohe9-sualy.jpg">
+<meta property="og:image" content="http://example.com/images/flex/ar25j-cvr5d.jpg">
+<meta property="og:image" content="http://example.com/images/flex/ajjiq-fzftz.jpg">
+<meta property="og:image" content="http://example.com/images/flex/afbfo-nnoug.jpg">
+<meta property="og:image" content="http://example.com/images/flex/a7gbb-tllei.jpg">
+<meta property="og:image" content="http://example.com/images/flex/a57z4-ti2p2.jpg">
+<meta property="og:image" content="http://example.com/images/flex/ayj0h-qq8ws.jpg">
 <meta property="article:published_time" content="2022-06-09T01:20:47.000Z">
-<meta property="article:modified_time" content="2022-06-09T07:27:55.626Z">
+<meta property="article:modified_time" content="2022-06-09T07:33:36.260Z">
 <meta property="article:author" content="Jang PengHui">
 <meta property="article:tag" content="flex">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/aohe9-sualy.jpg">
+<meta name="twitter:image" content="http://example.com/images/flex/aohe9-sualy.jpg">
 
 <title>
     flex布局
@@ -360,19 +360,19 @@
 <p><strong>所以flex: 1表示的含义是等分剩余空间</strong></p>
 </li>
 </ul>
-<h3 id="三、主轴与交叉轴"><a href="#三、主轴与交叉轴" class="headerlink" title="三、主轴与交叉轴"></a>三、主轴与交叉轴</h3><p>学习flex布局需要明白”主轴“与”交叉轴“的概念，采用flex布局的元素，称为”容器“ （ flex container），它的所有子元素都是容器的”项目“（flex item），容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做 main start ，结束位置叫做 main end ；交叉轴的开始位置叫做 cross start ，结束位置叫做 cross end<br><img src="/images/aohe9-sualy.jpg" alt="主轴与交叉轴解意图"></p>
+<h3 id="三、主轴与交叉轴"><a href="#三、主轴与交叉轴" class="headerlink" title="三、主轴与交叉轴"></a>三、主轴与交叉轴</h3><p>学习flex布局需要明白”主轴“与”交叉轴“的概念，采用flex布局的元素，称为”容器“ （ flex container），它的所有子元素都是容器的”项目“（flex item），容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做 main start ，结束位置叫做 main end ；交叉轴的开始位置叫做 cross start ，结束位置叫做 cross end<br><img src="/images/flex/aohe9-sualy.jpg" alt="主轴与交叉轴解意图"></p>
 <h3 id="四、容器的常用属性"><a href="#四、容器的常用属性" class="headerlink" title="四、容器的常用属性"></a>四、容器的常用属性</h3><h5 id="flex-direction-属性决定主轴的方向（即项目的排列方向）"><a href="#flex-direction-属性决定主轴的方向（即项目的排列方向）" class="headerlink" title="flex-direction  属性决定主轴的方向（即项目的排列方向）"></a>flex-direction  属性决定主轴的方向（即项目的排列方向）</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flex-<span class="attr">direction</span>: row | row-reverse | column | column-reverse</span><br></pre></td></tr></table></figure>
 <ul>
 <li>row（默认值）：主轴为水平方向，起点在左端。</li>
 <li>row-reverse：主轴为水平方向，起点在右端。</li>
 <li>column：主轴为垂直方向，起点在上沿。</li>
-<li>column-reverse：主轴为垂直方向，起点在下沿。<br><img src="/images/ar25j-cvr5d.jpg" alt="flex-direction"></li>
+<li>column-reverse：主轴为垂直方向，起点在下沿。<br><img src="/images/flex/ar25j-cvr5d.jpg" alt="flex-direction"></li>
 </ul>
 <h5 id="flx-wrap-换行，默认情况下不换行"><a href="#flx-wrap-换行，默认情况下不换行" class="headerlink" title="flx-wrap  换行，默认情况下不换行"></a>flx-wrap  换行，默认情况下不换行</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flex-<span class="attr">wrap</span>: nowrap | wrap | wrap-reverse</span><br></pre></td></tr></table></figure>
 <ul>
 <li>nowrap（默认值）：不换行。</li>
 <li>wrap：换行，第一行在上方。</li>
-<li>wrap-reverse：换行，第一行在下方。<br><img src="/images/ajjiq-fzftz.jpg" alt="flex-wrap"></li>
+<li>wrap-reverse：换行，第一行在下方。<br><img src="/images/flex/ajjiq-fzftz.jpg" alt="flex-wrap"></li>
 </ul>
 <h5 id="justify-content-属性定义了项目在主轴上的对齐方式"><a href="#justify-content-属性定义了项目在主轴上的对齐方式" class="headerlink" title="justify-content  属性定义了项目在主轴上的对齐方式"></a>justify-content  属性定义了项目在主轴上的对齐方式</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">justify-<span class="attr">content</span>: flex-start | flex-end | center | space-around | space-between | space-between</span><br></pre></td></tr></table></figure>
 <ul>
@@ -381,7 +381,7 @@
 <li>center： 居中</li>
 <li>space-around：每个项目两侧的间隔相等。</li>
 <li>space-between：两端对齐，项目之间的间隔都相等。</li>
-<li>space-evenly：每个项目的间隔与项目和容器之间的间隔是相等的。<br><img src="/images/afbfo-nnoug.jpg" alt="justify-content"></li>
+<li>space-evenly：每个项目的间隔与项目和容器之间的间隔是相等的。<br><img src="/images/flex/afbfo-nnoug.jpg" alt="justify-content"></li>
 </ul>
 <h5 id="align-items-属性定义项目在交叉轴上如何对齐"><a href="#align-items-属性定义项目在交叉轴上如何对齐" class="headerlink" title="align-items  属性定义项目在交叉轴上如何对齐"></a>align-items  属性定义项目在交叉轴上如何对齐</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align-<span class="attr">items</span>: flex-start | flex-end | center | baseline | stretch</span><br></pre></td></tr></table></figure>
 <ul>
@@ -389,7 +389,7 @@
 <li>flex-start：交叉轴的起点对齐。</li>
 <li>flex-end：交叉轴的终点对齐。</li>
 <li>center：交叉轴的中点对齐。</li>
-<li>baseline: 项目的第一行文字的基线对齐。<br><img src="/images/a7gbb-tllei.jpg" alt="align-items"></li>
+<li>baseline: 项目的第一行文字的基线对齐。<br><img src="/images/flex/a7gbb-tllei.jpg" alt="align-items"></li>
 </ul>
 <h5 id="align-content-属性定义了多根轴线的对齐方式，前提是需要设置flex-wrap-wrap，否则不会有效"><a href="#align-content-属性定义了多根轴线的对齐方式，前提是需要设置flex-wrap-wrap，否则不会有效" class="headerlink" title="align-content   属性定义了多根轴线的对齐方式，前提是需要设置flex-wrap: wrap，否则不会有效"></a>align-content   属性定义了多根轴线的对齐方式，前提是需要设置flex-wrap: wrap，否则不会有效</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align-<span class="attr">content</span>: flex-start | flex-end | center | space-between | space-around | stretch</span><br></pre></td></tr></table></figure>
 <ul>
@@ -398,11 +398,11 @@
 <li>flex-end：与交叉轴的终点对齐。</li>
 <li>center：与交叉轴的中点对齐。</li>
 <li>space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
-<li>space-around：每根轴线两侧的间隔都相等。<br><img src="/images/a57z4-ti2p2.jpg" alt="align-content"></li>
+<li>space-around：每根轴线两侧的间隔都相等。<br><img src="/images/flex/a57z4-ti2p2.jpg" alt="align-content"></li>
 </ul>
 <h5 id="align-self-属性允许单个项目有与其他项目不一样的对齐方式"><a href="#align-self-属性允许单个项目有与其他项目不一样的对齐方式" class="headerlink" title="align-self  属性允许单个项目有与其他项目不一样的对齐方式"></a>align-self  属性允许单个项目有与其他项目不一样的对齐方式</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align-<span class="attr">self</span>: auto | flex-start | flex-end | center | baseline | stretch;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"> .<span class="property">item</span> &#123;</span><br><span class="line">  <span class="attr">width</span>: 400px;</span><br><span class="line">  <span class="attr">height</span>: 300px;</span><br><span class="line">  <span class="attr">background</span>: skyblue;</span><br><span class="line">  <span class="attr">display</span>: flex;</span><br><span class="line">  <span class="attr">padding</span>: 5px;</span><br><span class="line">&#125;</span><br><span class="line">.<span class="property">item</span> div &#123;</span><br><span class="line">  <span class="attr">height</span>: 100px;</span><br><span class="line">  font-<span class="attr">size</span>: 20px;</span><br><span class="line">&#125;</span><br><span class="line">.<span class="property">item</span> div &#123;</span><br><span class="line">  <span class="attr">width</span>: 200px;</span><br><span class="line">  flex-<span class="attr">basis</span>: 300px;</span><br><span class="line">&#125;</span><br><span class="line">.<span class="property">item</span> <span class="attr">div</span>:nth-<span class="title function_">child</span>(<span class="params"><span class="number">1</span></span>) &#123;</span><br><span class="line">  <span class="attr">background</span>: pink;</span><br><span class="line">  align-<span class="attr">self</span>: flex-start;</span><br><span class="line">&#125;</span><br><span class="line">.<span class="property">item</span> <span class="attr">div</span>:nth-<span class="title function_">child</span>(<span class="params"><span class="number">2</span></span>) &#123;</span><br><span class="line">  <span class="attr">background</span>: violet;</span><br><span class="line">  align-<span class="attr">self</span>: center;</span><br><span class="line">&#125;</span><br><span class="line">.<span class="property">item</span> <span class="attr">div</span>:nth-<span class="title function_">child</span>(<span class="params"><span class="number">3</span></span>) &#123;</span><br><span class="line">  <span class="attr">background</span>: greenyellow;</span><br><span class="line">  align-<span class="attr">self</span>: flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/images/ayj0h-qq8ws.jpg" alt="align-content"></p>
+<p><img src="/images/flex/ayj0h-qq8ws.jpg" alt="align-content"></p>
 
                     </article>
 
